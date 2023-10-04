@@ -7,12 +7,14 @@ public class Cube : MonoBehaviour
     public MeshRenderer Renderer;
     // Cube location
     public Vector3 position = new Vector3(0.0f, 0.0f, 0.0f);
+    // Cube size
+    public Vector3 scale = new Vector3(1.0f, 1.0f, 1.0f);
     
 
     void Start()
     {
         transform.position = position;
-        transform.localScale = Vector3.one * 1.3f;
+        transform.localScale = scale;
 
         Material material = Renderer.material;
 
