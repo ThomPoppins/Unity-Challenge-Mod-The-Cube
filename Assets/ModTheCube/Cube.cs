@@ -9,6 +9,8 @@ public class Cube : MonoBehaviour
     public Vector3 position = new Vector3(0.0f, 0.0f, 0.0f);
     // Cube size
     public Vector3 scale = new Vector3(1.0f, 1.0f, 1.0f);
+    // Rotation angle
+    public float angle = 0.0f;
     
 
     void Start()
@@ -23,6 +25,6 @@ public class Cube : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(10.0f * Time.deltaTime, 0.0f, 0.0f);
+        transform.Rotate(angle * Time.deltaTime, 0.0f, 0.0f);
     }
 }
